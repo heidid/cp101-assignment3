@@ -18,9 +18,9 @@
 				</ul>
 			</nav>
 		</div>
-		<header style="background-image: url('housingheader.jpg'); background-position: 0 -90px;">
+		<header style="background-image: url('statenisland.jpg'); background-position: 0 -90px;">
 			<div class="overlay"></div>
-			<h1>Socio-Demographic Changes in Flood Zones</h1>
+			<h1>Socio-Demographic Changes</h1>
 		</header>
 		<main>
 			<div id="markdown-content">
@@ -35,13 +35,298 @@ To keep some level of consistency in our research, we used the same census tract
 
 Our hypothesis was that median income for the tracts we selected that were in the flood zones would be lower than that of the adjacent tract out of the flood zone. We based this hypothesis off the assumption that people with lower incomes would move into the flood zones as housing values might be lower there due to the storm’s damage. 
 
+## Data Tables
+We aggregated data from ACS 5-Year Estimates. The highlighted cells are those that support our hypothesis, and are discussed in analysis below.
+<figure>
+	<h5>Staten Island Census Tract Data (% Change)</h5>
+	<table class="data">
+		<thead>
+			<tr>
+				<th></th>
+				<th colspan="2">Tract 70 <small>(in flood zone)</small></th>
+				<th colspan="2">Tract 96.02 <small>(outside flood zone)</small></th>
+			</tr>
+			<tr class="strong-border">
+				<th></th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Median Household Income</td>
+			<td class="highlight">-0.1</td>
+			<td>-6.3</td>
+			<td class="highlight">7.6</td>
+			<td>-0.9</td>
+		</tr>
+		<tr>
+			<td>White (not Hispanic/Latino)</td>
+			<td>-2.0</td>
+			<td>-16.4</td>
+			<td>5.1</td>
+			<td>5.0</td>
+		</tr>
+		<tr>
+			<td>White (Hispanic/Latino)</td>
+			<td>-2.8</td>
+			<td>1.3</td>
+			<td>-2.0</td>
+			<td>-2.2</td>
+		</tr>
+		<tr>
+			<td>Black (not Hispanic/Latino)</td>
+			<td>-0.3</td>
+			<td>1.9</td>
+			<td>0.0</td>
+			<td>2.1</td>
+		</tr>
+	</table>
+	<table class="data">
+		<thead>
+			<tr>
+				<th></th>
+				<th colspan="2">Tract 112.02 <small>(in flood zone)</small></th>
+				<th colspan="2">Tract 122 <small>(outside flood zone)</small></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Median Household Income</td>
+			<td>3.4</td>
+			<td>5.7</td>
+			<td>1.1</td>
+			<td>-17</td>
+		</tr>
+		<tr>
+			<td>White (not Hispanic/Latino)</td>
+			<td>-3.9</td>
+			<td>-18</td>
+			<td>-3.4</td>
+			<td>-3.2</td>
+		</tr>
+		<tr>
+			<td>White (Hispanic/Latino)</td>
+			<td>-1.2</td>
+			<td>5.7</td>
+			<td>1.3</td>
+			<td>-2.1</td>
+		</tr>
+		<tr>
+			<td>Black (not Hispanic/Latino)</td>
+			<td>-0.2</td>
+			<td>3.6</td>
+			<td>-0.1</td>
+			<td>-0.8</td>
+		</tr>
+	</table>
+	<table class="data">
+		<thead>
+			<tr>
+				<th></th>
+				<th colspan="2">Tract 128.06 <small>(in flood zone)</small></th>
+				<th colspan="2">Tract 132.01 <small>(outside flood zone)</small></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Median Household Income</td>
+			<td class="highlight">-0.2</td>
+			<td>-6.8</td>
+			<td class="highlight">25.7</td>
+			<td>38.5</td>
+		</tr>
+		<tr>
+			<td>White (not Hispanic/Latino)</td>
+			<td>-5.1</td>
+			<td>1.3</td>
+			<td>9.2</td>
+			<td>-2.7</td>
+		</tr>
+		<tr>
+			<td>White (Hispanic/Latino)</td>
+			<td>0.7</td>
+			<td>-8.9</td>
+			<td>0.1</td>
+			<td>5.0</td>
+		</tr>
+		<tr>
+			<td>Black (not Hispanic/Latino)</td>
+			<td>1.5</td>
+			<td>1.4</td>
+			<td>0.0</td>
+			<td>1.6</td>
+		</tr>
+	</table>
+	<figcaption>Source: ACS</figcaption>
+</figure>
 
-## Analysis
+<figure>
+	<h5>Brooklyn Census Tract Data (% Change)</h5>
+	<table class="data">
+		<thead>
+			<tr>
+				<th></th>
+				<th colspan="2">Tract 300 <small>(in flood zone)</small></th>
+				<th colspan="2">Tract 298 <small>(outside flood zone)</small></th>
+			</tr>
+			<tr class="strong-border">
+				<th></th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Median Household Income</td>
+			<td>17.7</td>
+			<td>19.6</td>
+			<td>-0.1</td>
+			<td>16.2</td>
+		</tr>
+		<tr>
+			<td>White (not Hispanic/Latino)</td>
+			<td>-2.0</td>
+			<td>-18.1</td>
+			<td>-5.4</td>
+			<td>-6.5</td>
+		</tr>
+		<tr>
+			<td>White (Hispanic/Latino)</td>
+			<td>-0.2</td>
+			<td>-18.1</td>
+			<td>-5.4</td>
+			<td>-6.5</td>
+		</tr>
+		<tr>
+			<td>Black (not Hispanic/Latino)</td>
+			<td>-0.3</td>
+			<td>1.0</td>
+			<td>0.1</td>
+			<td>0.3</td>
+		</tr>
+	</table>
+	<table class="data">
+		<thead>
+			<tr>
+				<th></th>
+				<th colspan="2">Tract 308 <small>(in flood zone)</small></th>
+				<th colspan="2">Tract 386 <small>(outside flood zone)</small></th>
+			</tr>
+			<tr class="strong-border">
+				<th></th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Median Household Income</td>
+			<td class="highlight">-12.6</td>
+			<td>-13.6</td>
+			<td class="highlight">-3.8</td>
+			<td>31.8</td>
+		</tr>
+		<tr>
+			<td>White (not Hispanic/Latino)</td>
+			<td>13.3</td>
+			<td>21.8</td>
+			<td>-0.8</td>
+			<td>-8.5</td>
+		</tr>
+		<tr>
+			<td>White (Hispanic/Latino)</td>
+			<td>-9.1</td>
+			<td>-20.9</td>
+			<td>2.6</td>
+			<td>0.4</td>
+		</tr>
+		<tr>
+			<td>Black (not Hispanic/Latino)</td>
+			<td>0.3</td>
+			<td>1.5</td>
+			<td>0.0</td>
+			<td>-0.2</td>
+		</tr>
+	</table>
+	<table class="data">
+		<thead>
+			<tr>
+				<th></th>
+				<th colspan="2">Tract 374.01 <small>(in flood zone)</small></th>
+				<th colspan="2">Tract 388 <small>(outside flood zone)</small></th>
+			</tr>
+			<tr class="strong-border">
+				<th></th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+				<th>2012 vs 2013</th>
+				<th>2012 vs 2017</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Median Household Income</td>
+			<td>16.5</td>
+			<td>-3.6</td>
+			<td>12.1</td>
+			<td>45.8</td>
+		</tr>
+		<tr>
+			<td>White (not Hispanic/Latino)</td>
+			<td>-2.2</td>
+			<td>-11.6</td>
+			<td>-3.7</td>
+			<td>-14.6</td>
+		</tr>
+		<tr>
+			<td>White (Hispanic/Latino)</td>
+			<td>-0.6</td>
+			<td>-0.5</td>
+			<td>1.3</td>
+			<td>4.5</td>
+		</tr>
+		<tr>
+			<td>Black (not Hispanic/Latino)</td>
+			<td>0.3</td>
+			<td>5.2</td>
+			<td>0.3</td>
+			<td>6.7</td>
+		</tr>
+	</table>
+	<figcaption>Source: ACS</figcaption>
+</figure>
+
+## Income Level Analysis
 
 Looking at 2012 vs. 2013 in Brooklyn, tracts 374.01 and 300, both in the flood zone, showed larger positive percent changes than their adjacent tracts, which is contrary to our hypothesis.
 In Staten Island over this same time period, only one of the tracts in the flood zone, tract 112.02, showed a more positive percent change in median income than its adjacent, out-of-zone tract 122, partially supporting our hypothesis. For the 2012 vs. 2017 comparison, there are again no clear trends in how income changed as a result of the storm. The percent changes in income are likely affected by a myriad of other factors and there does not appear to be any long term impacts on median income in tracts within inundation zones. 
 
+## Race/Ethnicity Analysis
+
 We also looked at percent changes in race/ethnicity to see if a consequence of the storm was a rise in minorities moving into the damaged, less inhabitable inundation zones, as this might point to something inequitable. As our sample size was very small and random, we found no clear correlation of this. In fact, the tables show that the percent changes for the Hispanic white and non-Hispanic black populations were more positive in some of the non-flooded adjacent tracts. This could mean that the population of the inundated tracts decreased overall and the minorities who fled these tracts settled in adjacent tracts, thereby leading to the increased the positive percentage change seen in the adjacent tracts outside of the flood zones. 
+
+<figure>
+	<h5>Non-Hispanic White Population in 2012 and 2017</h5>
+	<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.socialexplorer.com/16538d32e9/embed" width="100%" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+	<figcaption>Source: ACS, Social Explorer</figcaption>
+</figure>
+
+## Conclusions
 
 Using ACS data alone in this section had its limitations. It lacks other variables that could help establish better correlative links to more thoroughly respond to our hypotheses. Our results were therefore varied and we cannot form a clear trend out of them. Nevertheless, it may be the case that Hurricane Sandy in fact did not really impact median income or demographics in the inundated tracts; perhaps, even with more thorough data, we might receive these same varied results. 
 

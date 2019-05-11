@@ -18,9 +18,9 @@
 				</ul>
 			</nav>
 		</div>
-		<header style="background-image: url('housingheader.jpg'); background-position: 0 -90px;">
+		<header style="background-image: url('evacuationheader.jpg'); background-position: 0 -250px;">
 			<div class="overlay"></div>
-			<h1>Impact on Housing Values</h1>
+			<h1>Evacuation Centers</h1>
 		</header>
 		<main>
 			<div id="markdown-content">
@@ -28,11 +28,14 @@
 We used data from NYC Open Data portal look at hurricane evacuation centers as of 2015. We created maps, one with the Google Maps API and d3.js, and another with Carto, to focus on the travel distance from each location.
 
 ## Maps
+We used a <a href="https://en.wikipedia.org/wiki/Voronoi_diagram" target="_blank">Voronoi diagram</a> to divide the map of New York into areas to show which hurricane evacuation centers citizens would be closest to. Clearly, some will have to travel much farther than others to reach one of the locations.
 <figure>
 	<h5>Voronoi Diagram of Hurricane Evacuation Centers</h5>
 	<iframe width="100%" height="520" frameborder="0" src="voronoi-google-maps/index.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 	<figcaption>Source: NYC Open Data; map generated with help of <a href="https://github.com/cdhagmann/Voronoi-Google-Maps" target="_blank">this Github repo</a> by <a href="https://github.com/cdhagmann" target="_blank">cdhagmann</a></figcaption>
 </figure>
+
+The next map shows 1-mile radii from each location. In an emergency disaster, driving or public transportation may not be possible, and with mass population movement, walking will be the most likely travel method. Each person will also have to carry extra belongings for evacuation, which may slow down travel. Based on this map, we can see that not everyone lives close to an evacuation center, which suggests that more are necessary on Staten Island and in south Brooklyn.
 
 <figure>
 	<h5>Hurricane Evacuation Centers 1-mile Radius</h5>
