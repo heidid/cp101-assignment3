@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat:500,700" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript" src="markdown-to-html.js"></script>
+		<title>Introduction | Urban Impact of Hurricane Sandy in New York</title>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="title"><small>CP 101 Assignment 3</small>Urban Impact of Hurricane Sandy in New York</div>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="active">Introduction</a></li>
+					<li><a href="housing.html">Impact on Housing Values</a></li>
+					<li><a href="evacuation.html">Hurricane Evacuation Center Accessibility</a></li>
+					<li><a href="censustracts.html">Socio-Demographic Changes in Flood Zones</a></li>
+					<li><a href="conclusion.html">Conclusion</a></li>
+				</ul>
+			</nav>
+		</div>
+		<header style="background-image: url('introheader.jpg'); background-position: 0 -90px;">
+			<div class="overlay"></div>
+			<h1>Introduction</h1>
+		</header>
+		<main>
+			<div id="markdown-content">
+In late October 2012, Hurricane Sandy ravaged the U.S. eastern seaboard. Labeled a Category 3 at its peak and a Category 2 while it was off the U.S. coast, the damage left in its wake resulted in the fourth costliest hurricane in U.S. history, amounting to nearly $65 billion in damages. 
+ 
+On October 29, 2012, the storm made landfall in New York City, causing over $19 billion in damages and flooding 17% of the city and about 90,000 buildings, ultimately leaving 43 dead. The city still feels the storm’s effects today, with its weakened infrastructure and ongoing development of coastal resiliency plans aiming to mitigate damages of future storms. As destructive as Hurricane Sandy was, worsening climate change and sea level rise means that coastal regions like New York City will see more intense and frequent storms like this along with more large-scale flooding.
+
+<figure>
+	<h5>Map: Hurricane Sandy Inundation Zones in New York</h5>
+	<iframe width="100%" height="520" frameborder="0" src="https://heidid.carto.com/builder/defd22d5-c828-4ab3-bb36-aa271a66b30a/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	<figcaption>Source: NYC Open Data</figcaption>
+</figure>
+
+While the storm devastated the entire city, this project will focus on two regions on the map that witnessed major inundation from the storm: the southern coast of Brooklyn and the south-eastern coast of Staten Island.
+
+<figure>
+	<img src="focusareas.png" alt="Regions of Focus">
+</figure>
+
+Using data from the NYC Open Data Website, NYC Department of Finance, FEMA, and American Community Survey (ACS) and visualizations using Carto and Social Explorer, this project will address these two main questions: 
+
+* How did Hurricane Sandy impact housing prices in our regions of interest?
+* Did Hurricane Sandy contribute to changes in the racial/ethnic or income makeup of the census tracts in our regions of interest?
+
+We will also include briefer discussions about the accessibility of hurricane evacuation zones. 
+			</div>			
+		</main>
+	</body>
+	<script>
+		var element = document.getElementById("markdown-content");
+		element.innerHTML = MarkdownToHtml.parse(element.innerHTML);
+	</script>
+</html>
