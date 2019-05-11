@@ -3,7 +3,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat:500,700" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		<script type="text/javascript" src="markdown-to-html.js"></script>
-		<title>Housing | Urban Impact of Hurricane Sandy in New York</title>
+		<title>Evacuation Centers | Urban Impact of Hurricane Sandy in New York</title>
 	</head>
 	<body>
 		<div class="sidebar">
@@ -11,8 +11,8 @@
 			<nav>
 				<ul>
 					<li><a href="index.html">Introduction</a></li>
-					<li><a href="housing.html" class="active">Impact on Housing Values</a></li>
-					<li><a href="evacuation.html">Hurricane Evacuation Center Accessibility</a></li>
+					<li><a href="housing.html">Impact on Housing Values</a></li>
+					<li><a href="evacuation.html" class="active">Hurricane Evacuation Center Accessibility</a></li>
 					<li><a href="censustracts.html">Socio-Demographic Changes in Flood Zones</a></li>
 					<li><a href="conclusion.html">Conclusion</a></li>
 				</ul>
@@ -25,33 +25,20 @@
 		<main>
 			<div id="markdown-content">
 ## Data and Methodology
+We used data from NYC Open Data portal look at hurricane evacuation centers as of 2015. We created maps to focus on the travel distance from each location.
 
-To examine the effects the storm had on housing prices, we did informal difference in difference analyses. We decided to do analysis at both the neighborhood level and at the census tract level. For the neighborhood level analysis, the data we used for housing prices was gathered from NYC Department of Finance, which included all sales from all boroughs from 2005-2017. We compared units sold in the neighborhoods within the inundation zones from 2012-2017 and then compared them to units sold in adjacent neighborhoods outside the inundation zones. For our tract level analyses, we used Social Explorer to create interactive maps based on ACS data, comparing the percent change in median housing price for adjacent tracts that were inside and outside of the inundation zone. 
- 
-For both the neighborhood and tract level analyses, we will look at estimates in 2012 versus 2013 to first show what occurred in the immediate aftermath of Hurricane Sandy, and then we will compare 2012 versus 2017 to show whether or not housing prices have recovered and stabilized as the market has readjusted over time. 
-
-
-In southern Brooklyn, we looked at the following neighborhoods:
-* in flood zones: Sea Gate, Coney Island, Brighton Beach, Gravesend, and Sheepshead Bay 
-* outside of flood zones, for comparison: Midwood and Bensonhurst
-
+## Maps
 <figure>
-	<h5>Brooklyn Neighborhood Map</h5>
-	<img src="brooklyn_neighborhoods.jpg" alt="">
-	<figcaption>Source: Baruch College NYCdata</figcaption>
+	<h5>Voronoi Diagram of Hurricane Evacuation Centers</h5>
+	<iframe width="100%" height="520" frameborder="0" src="voronoi-google-maps/index.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	<figcaption>Source: NYC Open Data; map generated with help of <a href="https://github.com/cdhagmann/Voronoi-Google-Maps" target="_blank">this Github repo</a> by <a href="https://github.com/cdhagmann" target="_blank">cdhagmann</a></figcaption>
 </figure>
 
-In south-eastern Staten Island, we looked at the following neighborhoods:
-* in the flood zones: New Dorp Beach, Oakwood, Midland Beach, and Grant City
-* outside of flood zones, for comparison: Richmond Town, New Dorp, and South Beach
-
 <figure>
-	<h5>Staten Island Neighborhood Map</h5>
-	<img src="statisland_neighborhoods.jpg" alt="">
-	<figcaption>Source: Baruch College NYCdata</figcaption>
+	<h5>Hurricane Evacuation Centers 1-mile Radius</h5>
+	<iframe width="100%" height="520" frameborder="0" src="https://heidid.carto.com/builder/61c19a12-7d85-4a0d-9eb1-d511a09cd8e4/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	<figcaption>Source: NYC Open Data</figcaption>
 </figure>
-
-
 
 			</div>			
 		</main>

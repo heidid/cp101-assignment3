@@ -105,3 +105,14 @@ figcaption {
 	text-align: center;
 	font-size: 0.83em;
 }
+table {
+	position: relative;
+	width: 800px;
+	/*left: -200px;*/
+}
+td img {
+	width: 100%;
+}
+.modal-trigger {
+	cursor: pointer;
+}

@@ -3,6 +3,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat:500,700" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		<script type="text/javascript" src="markdown-to-html.js"></script>
+		<script type="text/javascript" src="picomodal-3.0.0.min.js"></script>
 		<title>Housing | Urban Impact of Hurricane Sandy in New York</title>
 	</head>
 	<body>
@@ -51,6 +52,83 @@ In south-eastern Staten Island, we looked at the following neighborhoods:
 	<figcaption>Source: Baruch College NYCdata</figcaption>
 </figure>
 
+## Impacted Homes
+
+Using map data from NYC Planning, we mapped out the one and two family homes that were in the Sandy inundation zones, based on the building land use code.
+
+<figure>
+	<h5>One & Two Family Homes in Sandy Inundation Zones</h5>
+	<iframe width="100%" height="520" frameborder="0" src="https://heidid.carto.com/builder/c9cadec2-169d-47c7-b595-5a79cbcfd58f/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	<figcaption>Source: NYC Planning PLUTO, NYC Open Data</figcaption>
+</figure>
+
+
+## Neighborhood Level Analysis
+
+Our hypothesis was that *Hurricane Sandy would have a lasting detrimental impact on housing prices for properties in the inundation zones.*
+
+To test our hypothesis, we looked at median sale prices for one and two family homes in our neighborhoods of focus, from 2012 to 2017. __Click on each of the charts for a full-sized view.__
+
+#### Housing Sales in Brooklyn
+
+<table>
+	<tr>
+		<td>
+			<img src="brooklyn1.png" alt="" onclick="picoModal('<img src=\'brooklyn1.png\'>').show()" class="modal-trigger">
+		</td>
+		<td>
+			<img src="brooklyn2.png" alt="" onclick="picoModal('<img src=\'brooklyn2.png\'>').show()" class="modal-trigger">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="brooklyn3.png" alt="" onclick="picoModal('<img src=\'brooklyn3.png\'>').show()" class="modal-trigger">
+		</td>
+		<td>
+			<img src="brooklyn4.png" alt="" onclick="picoModal('<img src=\'brooklyn4.png\'>').show()" class="modal-trigger">
+		</td>
+	</tr>
+</table>
+
+<center><small>_Source: NYC Department of Finance_</small></center>
+
+
+#### Housing Sales in Staten Island
+
+<table>
+	<tr>
+		<td>
+			<img src="statisl1.png" alt="" onclick="picoModal('<img src=\'statisl1.png\'>').show()" class="modal-trigger">
+		</td>
+		<td>
+			<img src="statisl2.png" alt="" onclick="picoModal('<img src=\'statisl2.png\'>').show()" class="modal-trigger">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="statisl3.png" alt="" onclick="picoModal('<img src=\'statisl3.png\'>').show()" class="modal-trigger">
+		</td>
+		<td>
+			<img src="statisl4.png" alt="" onclick="picoModal('<img src=\'statisl4.png\'>').show()" class="modal-trigger">
+		</td>
+	</tr>
+</table>
+
+<center><small>_Source: NYC Department of Finance_</small></center>
+
+From our neighborhood level analysis, we see that there was almost universally an initial drop in one and two family home values from 2012-2013 for homes in the inundation zones, which we expected in the storm’s immediate aftermath. For homes in adjacent neighborhoods out of the inundation zone, we see that housing prices kept rising over this same 2012-2013 period. So for the first year following the storm, our hypothesis held. However, we see that there was an continued increase in prices from 2014-2016, as the market began recovering and prices followed. As of 2017, the year-to-year increase in housing prices for homes in and out of the inundation zone basically mirror each other and should continue to move upward in tandem as New York City’s entire housing market is restored to equilibrium. 
+
+
+### Housing Assistance
+
+This map shows that the average housing assistance given for the inundation zone areas was higher than that of areas out of the zones. This likely contributed to the speed at which the housing market recovered, as damaged properties were repaired and could sell for higher prices, leading to the trends seen in the graphs after 2013. 
+
+
+<figure>
+	<h5>IHP Average Housing Assistance by Zipcode</h5>
+	<iframe width="100%" height="520" frameborder="0" src="https://heidid.carto.com/builder/f91b2c98-2057-4e67-9fe0-f07fc2ff0faf/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	<figcaption>Source: <a href="https://www.fema.gov/openfema-dataset-registration-intake-and-individuals-household-program-v1" target="_blank">FEMA</a></figcaption>
+</figure>
 
 
 			</div>			
